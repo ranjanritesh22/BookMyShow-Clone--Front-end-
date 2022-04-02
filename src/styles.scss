@@ -1,1 +1,234 @@
-/* You can add global styles to this file, and also import other style files */
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body{
+    overflow-x: hidden;
+}  
+
+h4{
+    font-weight: 700;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white !important;
+}
+
+li{
+    list-style-type: none;
+}
+
+.bg-blue{
+    background-color: rgb(31, 37, 51);
+}
+
+.bg-header-dark-blue{
+    background-color: rgb(51, 53, 69);
+}
+
+.bg-dark-blue{
+    background-color: rgb(43, 49, 72);
+}
+
+.text-white{
+    color: white !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.line-height-zero{
+    line-height: 0 !important;
+}
+
+.form-control{
+    width: 250%;
+}
+
+.dropdown{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(204, 204, 204);
+    padding-right: 15px;
+    padding-top: 5px;
+    line-height: 19px;
+}
+
+.dropdown::after{
+    display: block;
+    content: "";
+    position: absolute;
+    inset: 0px 0px 0px;
+    margin: auto 0px auto auto;
+    width: 0px;
+    height: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid rgb(255, 255, 255);
+}
+
+.signin-btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    font-size: 12px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgb(248, 68, 100);
+    display: block;
+}
+
+.hamburger-icon{
+    div{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+    }
+}
+
+.hamburger-icon{
+    cursor: pointer;
+}
+
+.new-label{
+    font-size: 8px;
+    color: rgb(231, 54, 77);
+    font-weight: 500;
+}
+
+.stream-new{
+    position: absolute;
+    top: 74px;
+    left: 215px;
+}
+
+.ListYourShow-new{
+    position: absolute;
+    top: 74px;
+    right: 333px;
+}
+
+.navbar-items{
+    a{
+        font-size: 14px;
+        font-weight: 400 !important;
+        color: rgb(204, 204, 204);
+    }
+}
+
+.card-image-top{
+    border-radius: 11px;
+    height: 23rem;
+    width: 15rem;
+}
+
+.banner{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.events-card-image{
+    height: 13rem;
+    width: 15rem;
+    border-radius: 11px;
+}
+
+.premiere-banner{
+    img{
+        width:100%;
+        height: 100%;
+    }
+}
+
+.carousel{
+    img{
+        display: none;
+        border-radius: 11px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.carousel img.image-active{
+    display: flex;
+}
+
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.6s ease;
+    opacity: 0.5;
+}
+
+.btn-carousel{
+    padding: 10px;
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0 6px 6px 0;
+}
+
+.btn-carousel{
+    &.btn-prev{
+        position: absolute;
+        top: 40%;
+        right: 104%;
+    }
+    &.btn-next{
+        position: absolute;
+        left: 104%;
+        top: 40%;
+        transform: rotate(180deg);
+    }
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+.scroll-btn{
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(102, 102, 102);
+    border-radius: 50%;
+}
+
+.scroll-btn{
+    svg{
+        width: 100%;
+        height: 60%;
+    }
+}
+
+.top-y-18{
+    position: relative;
+    bottom: 18rem;
+}
+
+.top-y-7{
+    position: relative;
+    bottom: 7rem;
+}
+
+.right-x-15{
+    right: 15px;
+}
+
+.left-x-79{
+    left : 79.5rem;
+}

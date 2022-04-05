@@ -1,0 +1,169 @@
+@import "./variables.scss";
+
+h3{
+    color: $textDarkGrey;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    margin: 0rem !important;
+}
+
+h4{
+    font-weight: 700 !important;
+    font-size: 24px !important;
+}
+
+h5{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+
+a{
+    color: $white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: $white !important;
+}
+
+li{
+    list-style-type: none;
+}
+
+.height-60px{
+    height: 60px !important;
+}
+
+.padding-min-height-1{
+    min-height: 64px;
+    padding-top: 1rem;
+}
+
+.ps-5{
+    padding-left: 5rem !important;
+}
+
+.pt-8{
+    padding-top: 8rem !important;
+}
+
+.ps-10{
+    padding-left: 10rem;
+}
+
+.py-10px{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.bg-blue{
+    background-color: $blue;
+}
+
+.bg-header-dark-blue{
+    background-color: $headerDarkBlue;
+}
+
+.bg-dark-blue{
+    background-color: $darkBlue;
+}
+
+.bg-dark-grey{
+    background-color: $darkGrey !important;
+}
+
+.text-white{
+    color: $white !important;
+}
+
+.text-color-dark-grey{
+    color: $textDarkGrey;
+}
+
+.text-color-light-grey{
+    color: $textLightGrey !important ;
+}
+
+.text-under-line{
+    text-decoration: underline !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.line-height-zero{
+    line-height: 0 !important;
+}
+
+.position-absolute{
+    position: absolute !important;
+}
+
+.position-relative{
+    position: relative !important;
+}
+
+.top-y-70{
+    top: 70px;
+}
+
+.top-y-40{
+    top: 40%;
+}
+
+.right-x-15{
+    right: 15px;
+}
+
+.right-x-333{
+    right: 333px;
+}
+
+.right-x-97{
+    right: 97%;
+}
+
+.left-x-79{
+    left : 79.5rem;
+}
+
+.left-x-215{
+    left: 215px !important;
+}
+
+.left-x-97{
+    left: 97%;
+}
+
+.bottom-y-7{
+    bottom: 7rem;
+}
+
+.bottom-y-18{
+    bottom: 18rem;
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+.rotate-180deg{
+    transform: rotate(180deg);
+}
+
+.font-size-16px{
+    font-size: 16px !important;
+}
+
+.font-bold-500{
+    font-weight: 500 !important;
+}
+
+.border-bottom-grey{
+    border-bottom: 1px solid $borderBottomGrey;
+}
+
+.border-grey{
+    border: 1px solid $borderGrey !important;
+}

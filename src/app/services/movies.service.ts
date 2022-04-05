@@ -8,10 +8,10 @@ import { Movies } from '../mock-movies';
 })
 export class MoviesService {
 
-  constructor() { }
-
   allMovies : Movie[] = Movies;
 
+  constructor() { }
+  
   getMovies() : Observable<Movie[]> {
     const movies = this.allMovies;
     return of(movies);

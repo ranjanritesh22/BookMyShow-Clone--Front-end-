@@ -5,6 +5,7 @@ import { Component, OnInit, ViewChild , ElementRef } from '@angular/core';
   templateUrl: './events.component.html',
 })
 export class EventsComponent implements OnInit {
+  
   @ViewChild('slider', { read: ElementRef })
   public slider!: ElementRef<any>;
    
@@ -20,12 +21,10 @@ export class EventsComponent implements OnInit {
     "../../../assets/images/events/arts.avif",
     "../../../assets/images/events/cooking.jpg",
   ]
-
   btnPrev :boolean = false;
   btnNext : boolean = true;
   changeLeft : boolean = false;
   changeRight : boolean = true;
-
 
   constructor() { }
 
@@ -43,5 +42,4 @@ export class EventsComponent implements OnInit {
     this.btnPrev = true;
     this.changeLeft = true;
   }
-
 }

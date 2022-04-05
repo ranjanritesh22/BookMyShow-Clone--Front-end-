@@ -8,7 +8,6 @@ const routes : Routes = [
  { path : 'movies' , component : MoviesDetailComponent }
 ]
 
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

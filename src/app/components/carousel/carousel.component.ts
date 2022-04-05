@@ -7,12 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CarouselComponent implements OnInit {
 
  @Input() autoSlide = false;
+
   slides  = [
     "../../../assets/images/slider/slide 1.avif",
     "../../../assets/images/slider/slide 2.avif",
     "../../../assets/images/slider/slide 3.avif"
   ]
-
  selectedIndex = 0
 
  constructor() { }
@@ -50,5 +50,4 @@ export class CarouselComponent implements OnInit {
      this.selectedIndex++;
    }
  }
-
 }

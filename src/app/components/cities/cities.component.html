@@ -1,0 +1,26 @@
+<div class="d-flex justify-content-start align-items-center border-grey">
+    <div class="ms-2">
+        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+            <title>Search</title>
+            <path
+                d="M11.8 10.864L8.859 7.918a4.912 4.912 0 0 0-.444-6.47A4.888 4.888 0 0 0 4.928 0a4.888 4.888 0 0 0-3.485 1.449 4.942 4.942 0 0 0 0 6.979 4.888 4.888 0 0 0 3.485 1.449c1.052 0 2.105-.33 2.976-1.005l2.96 2.93a.658.658 0 0 0 .476.198.686.686 0 0 0 .477-.198.672.672 0 0 0-.016-.938zm-6.855-2.32c-.97 0-1.858-.38-2.549-1.054C1 6.09 1 3.802 2.396 2.387a3.578 3.578 0 0 1 2.549-1.054c.97 0 1.858.379 2.548 1.054s1.052 1.58 1.052 2.551c0 .971-.378 1.86-1.052 2.552a3.539 3.539 0 0 1-2.548 1.053z"
+                fill="#777"></path>
+        </svg>
+    </div>
+    <input class="search-city-bar" type="text" placeholder="Search for your city">
+</div>
+<div class="py-4">
+    <div class="d-flex justify-content-center">
+        <p>Popular Cities</p>
+    </div>
+    <div class="d-flex">
+        <div *ngFor="let city of cities" class="d-flex flex-column align-items-center px-3"
+            [mat-dialog-close]="city.name">
+            <img class="height-60px" src="{{city.src}}" alt="">
+            <p>{{city.name}}</p>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center">
+    <p class="text-danger cursor-pointer">View All Cities</p>
+</div>

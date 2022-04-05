@@ -35,5 +35,4 @@ export class PremiereMoviesComponent implements OnInit {
     this.btnPrev = true;
     this.changeLeft = true;
   }
-
 }

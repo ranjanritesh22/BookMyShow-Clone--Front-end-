@@ -1,2 +1,10 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+    <mat-sidenav position="end" [(opened)]="opened">
+        <app-side-nav></app-side-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (openSideNavEvent)="opened=!opened" [isOpened]="!opened"></app-header>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<div>

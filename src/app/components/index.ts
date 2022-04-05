@@ -4,4 +4,8 @@ export * from './movies-detail/movies-detail.component';
 export * from './recommended-movies/recommended-movies.component';
 export * from './events/events.component';
 export * from './premiere-movies/premiere-movies.component';
-export * from './carousel/carousel.component'
+export * from './carousel/carousel.component';
+export * from './side-nav/side-nav.component';
+export * from './cities/cities.component';
+export * from './login/login.component';
+export * from './footer/footer.component'

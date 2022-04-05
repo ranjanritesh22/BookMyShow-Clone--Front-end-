@@ -20,13 +20,9 @@ export class RecommendedMoviesComponent implements OnInit {
   constructor(private  movieService : MoviesService) { }
 
   ngOnInit(): void {
-   this.getMovies() 
-  }
-  
-  getMovies(){
     this.movieService.getMovies().subscribe(movies => this.movies = movies.slice(0,10));
   }
-
+  
   public scrollLeft(): void {
     this.slider.nativeElement.scrollTo({ left: (this.slider.nativeElement.scrollLeft - 1320), behavior: 'smooth' });
     this.btnNext = true;
@@ -39,5 +35,4 @@ export class RecommendedMoviesComponent implements OnInit {
     this.btnPrev = true;
     this.changeLeft = true;
   }
-
 }

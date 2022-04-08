@@ -8,4 +8,5 @@ export * from './carousel/carousel.component';
 export * from './side-nav/side-nav.component';
 export * from './cities/cities.component';
 export * from './login/login.component';
-export * from './footer/footer.component'
+export * from './footer/footer.component';
+export * from './all-movies/all-movies.component'

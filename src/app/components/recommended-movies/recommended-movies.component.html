@@ -1,7 +1,7 @@
 <div>
     <div class="d-flex justify-content-between">
         <h4>Recommended Movies</h4>
-        <a class="text-danger see-all-movies-btn cursor-pointer">See All ›</a>
+        <a class="text-danger see-all-movies-btn cursor-pointer" routerLink="/movies">See All ›</a>
     </div>
     <div class="d-flex overflow-x-hidden" #slider>
         <div *ngFor="let movie of movies" class="me-4 cursor-pointer">

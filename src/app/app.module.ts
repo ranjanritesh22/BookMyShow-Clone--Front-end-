@@ -15,7 +15,8 @@ import { HeaderComponent,
   SideNavComponent,
   CitiesComponent,
   LoginComponent,
-  FooterComponent } from './components';
+  FooterComponent,
+  AllMoviesComponent } from './components';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HeaderComponent,
     SideNavComponent,
     CitiesComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    AllMoviesComponent
   ],
   imports: [
     BrowserModule,

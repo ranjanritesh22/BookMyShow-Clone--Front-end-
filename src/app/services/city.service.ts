@@ -1,19 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { City } from '../models';
-import { Cities } from '../mock-cities';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CityService {
 
-  allCities : City[] = Cities
+  cityUrl = "https://ranjanritesh22.github.io/book-my-show-cities-json/cities.json";
 
-  constructor() { }
+  constructor(private http : HttpClient) { }
 
   getCities() : Observable<City[]> {
-    const cities = this.allCities;
-    return of(cities);
+    return this.http.get<City[]>(this.cityUrl)
   }
 }

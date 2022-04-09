@@ -46,6 +46,7 @@ export class AllMoviesComponent implements OnInit {
   getAllMovies(){
     this.movieService.getMovies().subscribe(allMovies =>{ 
       this.allMovieList = allMovies;
+      this.allMovies = this.allMovieList;
     });
   }
 

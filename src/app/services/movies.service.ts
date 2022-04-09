@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Movie } from '../models';
-import { Movies } from '../mock-movies';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class MoviesService {
 
-  allMovies : Movie[] = Movies;
+  movieUrl = "https://ranjanritesh22.github.io/bookMyShow-movies-json/movies.json"
 
-  constructor() { }
+  constructor( private http : HttpClient) { }
   
   getMovies() : Observable<Movie[]> {
-    const movies = this.allMovies;
-    return of(movies);
+    return this.http.get<Movie[]>(this.movieUrl) 
   }
 }

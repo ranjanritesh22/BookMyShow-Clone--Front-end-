@@ -14,6 +14,5 @@ export class CitiesComponent implements OnInit {
 
   ngOnInit(): void {
     this.cityService.getCities().subscribe((cities)=> this.cities = cities)
-    console.log(this.cities)
   }
 }

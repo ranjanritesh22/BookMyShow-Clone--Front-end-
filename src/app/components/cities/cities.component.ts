@@ -8,7 +8,7 @@ import { City } from '../../models';
 })
 export class CitiesComponent implements OnInit {
 
-  cities : City[] = []
+  cities : City[] = [];
 
   constructor( private  cityService : CityService) { }
 

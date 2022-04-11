@@ -26,7 +26,8 @@
                                 <div class="mt-2 d-flex flex-wrap">
                                     <button *ngFor="let language of languages ; let i = index"
                                         (click)="selectedLanguageBtn(language,i)" class="border-bg-color px-3 py-1 m-2 "
-                                        [ngClass]="langBtn[i] ? 'selected' : ''">{{language}}</button>
+                                        [ngClass]="langBtn[i] ? 'selected' : ''">{{language}}
+                                    </button>
                                 </div>
                             </div>
                         </div>

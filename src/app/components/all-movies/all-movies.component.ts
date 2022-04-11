@@ -12,10 +12,10 @@ export class AllMoviesComponent implements OnInit {
   genreModal : boolean = false;
   allMovies : Movie[] = [];
   allMovieList: Movie[] = [];
-  languages : any[]   = []
+  languages : any[]   = [];
   langBtn : any[] = [];
-  selectedLanguages : any[] = []
-  genres : any[] = []
+  selectedLanguages : any[] = [];
+  genres : any[] = [];
   genreBtn : any[] = [];
   selectedGenres : any[] = [];
 
@@ -23,30 +23,25 @@ export class AllMoviesComponent implements OnInit {
   constructor( private movieService : MoviesService) { }
 
   ngOnInit(): void {
-    this.getAllMovies();
-    this.allMovies = this.allMovieList;
-    this.allMovies.forEach(genre => {
-      genre.genre.forEach(e=> {
-        if(this.genres.indexOf(e) === -1){
-          this.genres.push(e);
-          this.genreBtn.push(false);
-        }
-      })
-    })
-    this.allMovies.forEach(movie => {
-      movie.language.forEach(e => {
-        if (this.languages.indexOf(e) === -1) {
-          this.languages.push(e);
-          this.langBtn.push(false)
-        }
-      })
-    })
-  }
-
-  getAllMovies(){
     this.movieService.getMovies().subscribe(allMovies =>{ 
       this.allMovieList = allMovies;
       this.allMovies = this.allMovieList;
+      this.allMovies.forEach(genre => {
+        genre.genre.forEach(e=> {
+          if(this.genres.indexOf(e) === -1){
+            this.genres.push(e);
+            this.genreBtn.push(false);
+          }
+        })
+      })
+      this.allMovies.forEach(movie => {
+        movie.language.forEach(e => {
+          if (this.languages.indexOf(e) === -1) {
+            this.languages.push(e);
+            this.langBtn.push(false);
+          }
+        })
+      })
     });
   }
 
@@ -80,7 +75,7 @@ export class AllMoviesComponent implements OnInit {
     this.langBtn[index]=!this.langBtn[index]
     for(let i = 0 ; i<this.langBtn.length ; i++){
       if(this.langBtn[i]){
-        this.selectedLanguages.push(this.languages[i])
+        this.selectedLanguages.push(this.languages[i]);
       }
     }
     if(this.selectedLanguages.length != 0){
@@ -96,7 +91,7 @@ export class AllMoviesComponent implements OnInit {
     this.genreBtn[index]=!this.genreBtn[index]
     for(let i = 0 ; i<this.genreBtn.length ; i++){
       if(this.genreBtn[i]){
-        this.selectedGenres.push(this.genres[i])
+        this.selectedGenres.push(this.genres[i]);
       }
     }
     if(this.selectedGenres.length != 0){

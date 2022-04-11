@@ -5,22 +5,21 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './carousel.component.html',
 })
 export class CarouselComponent implements OnInit {
-
- @Input() autoSlide = false;
+  @Input() autoSlide = false;
 
   slides  = [
     "../../../assets/images/slider/slide 1.avif",
     "../../../assets/images/slider/slide 2.avif",
-    "../../../assets/images/slider/slide 3.avif"
+    "../../../assets/images/slider/slide 3.avif",
   ]
- selectedIndex = 0
+  selectedIndex = 0
 
- constructor() { }
+  constructor() { }
 
- ngOnInit(): void {
-   if(this.autoSlide){
-     this.autoSlideImages();
-   }
+  ngOnInit(): void {
+    if(this.autoSlide){
+      this.autoSlideImages();
+    }
   }
 
   autoSlideImages(){
@@ -29,25 +28,25 @@ export class CarouselComponent implements OnInit {
     },3000);
   }
 
- selectedImage(index : number){
-   this.selectedIndex = index
- }
+  selectedImage(index : number){
+    this.selectedIndex = index;
+  }
 
- prevSlide(){
-   if(this.selectedIndex === 0){
-     this.selectedIndex = this.slides.length-1;
-   }
-   else{
-     this.selectedIndex--;
-   }
- }
+  prevSlide(){
+    if(this.selectedIndex === 0){
+      this.selectedIndex = this.slides.length-1;
+    }
+    else{
+      this.selectedIndex--;
+    }
+  }
 
- nextSlide(){
-   if(this.selectedIndex === this.slides.length -1){
-     this.selectedIndex = 0;
-   }
-   else{
-     this.selectedIndex++;
-   }
- }
+  nextSlide(){
+    if(this.selectedIndex === this.slides.length -1){
+      this.selectedIndex = 0;
+    }
+    else{
+      this.selectedIndex++;
+    }
+  }
 }
